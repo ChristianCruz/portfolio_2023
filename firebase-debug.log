@@ -1,0 +1,158 @@
+[debug] [2023-08-28T14:06:07.460Z] ----------------------------------------------------------------------
+[debug] [2023-08-28T14:06:07.463Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\chris\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-08-28T14:06:07.464Z] CLI Version:   12.5.2
+[debug] [2023-08-28T14:06:07.464Z] Platform:      win32
+[debug] [2023-08-28T14:06:07.464Z] Node Version:  v18.17.0
+[debug] [2023-08-28T14:06:07.466Z] Time:          Mon Aug 28 2023 10:06:07 GMT-0400 (Bolivia Time)
+[debug] [2023-08-28T14:06:07.466Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-28T14:06:07.579Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-28T14:06:07.580Z] > authorizing via signed-in user (cruz.dardenne@gmail.com)
+[debug] [2023-08-28T14:06:07.580Z] [iam] checking project firefolio-9b67b for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-08-28T14:06:07.584Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/firefolio-9b67b:testIamPermissions [none]
+[debug] [2023-08-28T14:06:07.584Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/firefolio-9b67b:testIamPermissions x-goog-quota-user=projects/firefolio-9b67b
+[debug] [2023-08-28T14:06:07.585Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/firefolio-9b67b:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-28T14:06:07.993Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/firefolio-9b67b:testIamPermissions 200
+[debug] [2023-08-28T14:06:07.994Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/firefolio-9b67b:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-28T14:06:07.996Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/firefolio-9b67b [none]
+[debug] [2023-08-28T14:06:08.294Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/firefolio-9b67b 200
+[debug] [2023-08-28T14:06:08.295Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/firefolio-9b67b {"projectId":"firefolio-9b67b","projectNumber":"937574644151","displayName":"firefolio","name":"projects/firefolio-9b67b","resources":{"hostingSite":"firefolio-9b67b"},"state":"ACTIVE","etag":"1_1854933e-553d-4b6d-9eab-3c709b399f72"}
+[debug] [2023-08-28T14:06:15.257Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/firefolio-9b67b/sites pageToken=&pageSize=10
+[debug] [2023-08-28T14:06:15.746Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/firefolio-9b67b/sites 200
+[debug] [2023-08-28T14:06:15.746Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/firefolio-9b67b/sites {"sites":[{"name":"projects/firefolio-9b67b/sites/firefolio-9b67b","defaultUrl":"https://firefolio-9b67b.web.app","appId":"1:937574644151:web:a9374ba0575b24c6c05032","type":"DEFAULT_SITE"}]}
+[debug] [2023-08-28T14:06:15.747Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:937574644151:web:a9374ba0575b24c6c05032/config [none]
+[debug] [2023-08-28T14:06:16.320Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:937574644151:web:a9374ba0575b24c6c05032/config 200
+[debug] [2023-08-28T14:06:16.321Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:937574644151:web:a9374ba0575b24c6c05032/config {"projectId":"firefolio-9b67b","appId":"1:937574644151:web:a9374ba0575b24c6c05032","storageBucket":"firefolio-9b67b.appspot.com","apiKey":"AIzaSyDPWFufia4eONQ0d50WJYnVPC8ssvvdFBc","authDomain":"firefolio-9b67b.firebaseapp.com","messagingSenderId":"937574644151"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info] - info Loaded env from C:\Users\chris\OneDrive\Desktop\My_Files\DENV\portfolio\.env.local
+
+[info] - warn You have enabled experimental feature (serverActions) in next.config.js.
+
+[info] - warn Experimental features are not covered by semver, and may cause unexpected or broken application behavior. Use at your own risk.
+
+
+[info] - info Creating an optimized production build...
+
+[info] - info Compiled successfully
+
+[info] - info Linting and checking validity of types...
+
+[info] - info Collecting page data...
+
+[info] - warn Using server actions on a page currently disables static generation for that page
+
+[info] - info Generating static pages (0/3)
+
+[info] - info Generating static pages (3/3)
+
+[info] - info Finalizing page optimization...
+
+[info] 
+
+[info] Route (app)                                Size     First Load JS
+┌ λ /                                      21.6 kB         146 kB
+└ ○ /favicon.ico                           0 B                0 B
++ First Load JS shared by all              125 kB
+  ├ chunks/114-c9036172a01ec24d.js         26.5 kB
+  ├ chunks/380-c94c3496ebf88bfd.js         42.1 kB
+  ├ chunks/39209d7c-55a19bb62b971c46.js    1.41 kB
+  ├ chunks/bf6a786c-7de72f819f65f731.js    52.7 kB
+  ├ chunks/main-app-9917776d637167a7.js    219 B
+  └ chunks/webpack-fa1fd798cb0e77b0.js     1.71 kB
+
+Route (pages)                              Size     First Load JS
+─ ○ /404                                   182 B          75.7 kB
++ First Load JS shared by all              75.5 kB
+  ├ chunks/framework-8883d1e9be70c3da.js   45.1 kB
+  ├ chunks/main-e3a8d5fb2ec17f75.js        28.6 kB
+  ├ chunks/pages/_app-52924524f99094ab.js  195 B
+  └ chunks/webpack-fa1fd798cb0e77b0.js     1.71 kB
+
+[info] 
+λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • non-static component /page
+[info] 
+[debug] [2023-08-28T14:07:30.834Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:885:11)
+    at execSync (node:child_process:957:15)
+    at prepareFrameworks (C:\Users\chris\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:367:42)
+    at async deploy (C:\Users\chris\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-28T14:21:52.346Z] ----------------------------------------------------------------------
+[debug] [2023-08-28T14:21:52.349Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\chris\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-08-28T14:21:52.350Z] CLI Version:   12.5.2
+[debug] [2023-08-28T14:21:52.351Z] Platform:      win32
+[debug] [2023-08-28T14:21:52.351Z] Node Version:  v18.17.0
+[debug] [2023-08-28T14:21:52.353Z] Time:          Mon Aug 28 2023 10:21:52 GMT-0400 (Bolivia Time)
+[debug] [2023-08-28T14:21:52.353Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-28T14:21:52.488Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-28T14:21:52.489Z] > authorizing via signed-in user (cruz.dardenne@gmail.com)
+[debug] [2023-08-28T14:21:52.489Z] [iam] checking project firefolio-9b67b for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-08-28T14:21:52.492Z] > refreshing access token with scopes: []
+[debug] [2023-08-28T14:21:52.496Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-08-28T14:21:52.496Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-08-28T14:21:52.863Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-08-28T14:21:52.864Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-08-28T14:21:52.876Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/firefolio-9b67b:testIamPermissions [none]
+[debug] [2023-08-28T14:21:52.876Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/firefolio-9b67b:testIamPermissions x-goog-quota-user=projects/firefolio-9b67b
+[debug] [2023-08-28T14:21:52.876Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/firefolio-9b67b:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-28T14:21:53.153Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/firefolio-9b67b:testIamPermissions 200
+[debug] [2023-08-28T14:21:53.153Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/firefolio-9b67b:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-28T14:21:53.155Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/firefolio-9b67b [none]
+[debug] [2023-08-28T14:21:53.542Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/firefolio-9b67b 200
+[debug] [2023-08-28T14:21:53.543Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/firefolio-9b67b {"projectId":"firefolio-9b67b","projectNumber":"937574644151","displayName":"firefolio","name":"projects/firefolio-9b67b","resources":{"hostingSite":"firefolio-9b67b"},"state":"ACTIVE","etag":"1_1854933e-553d-4b6d-9eab-3c709b399f72"}
+[debug] [2023-08-28T14:22:01.576Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/firefolio-9b67b/sites pageToken=&pageSize=10
+[debug] [2023-08-28T14:22:02.041Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/firefolio-9b67b/sites 200
+[debug] [2023-08-28T14:22:02.041Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/firefolio-9b67b/sites {"sites":[{"name":"projects/firefolio-9b67b/sites/firefolio-9b67b","defaultUrl":"https://firefolio-9b67b.web.app","appId":"1:937574644151:web:a9374ba0575b24c6c05032","type":"DEFAULT_SITE"}]}
+[debug] [2023-08-28T14:22:02.041Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:937574644151:web:a9374ba0575b24c6c05032/config [none]
+[debug] [2023-08-28T14:22:02.504Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:937574644151:web:a9374ba0575b24c6c05032/config 200
+[debug] [2023-08-28T14:22:02.504Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:937574644151:web:a9374ba0575b24c6c05032/config {"projectId":"firefolio-9b67b","appId":"1:937574644151:web:a9374ba0575b24c6c05032","storageBucket":"firefolio-9b67b.appspot.com","apiKey":"AIzaSyDPWFufia4eONQ0d50WJYnVPC8ssvvdFBc","authDomain":"firefolio-9b67b.firebaseapp.com","messagingSenderId":"937574644151"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info] - info Loaded env from C:\Users\chris\OneDrive\Desktop\My_Files\DENV\portfolio\.env.local
+
+[info] - warn You have enabled experimental feature (serverActions) in next.config.js.
+
+[info] - warn Experimental features are not covered by semver, and may cause unexpected or broken application behavior. Use at your own risk.
+
+
+[info] - info Creating an optimized production build...
+
+[info] - info Compiled successfully
+
+[info] - info Linting and checking validity of types...
+
+[info] - info Collecting page data...
+
+[info] - warn Using server actions on a page currently disables static generation for that page
+
+[info] 
+
+[info] > Server Actions are not supported with static export.
+
+[debug] [2023-08-28T14:22:45.484Z] Error: ENOENT: no such file or directory, open 'C:\Users\chris\OneDrive\Desktop\My_Files\DENV\portfolio\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.

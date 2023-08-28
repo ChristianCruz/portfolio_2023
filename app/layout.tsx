@@ -1,6 +1,9 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Header from "@/components/header";
+import Footer from "@/components/footer";
+import ActiveSectionContextProvider from "@/context/active-section-context";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,17 +19,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} bg-slate-100 text-gray-950 relative h-[5000px] pt-28 sm:pt-36`}
+        className={`${inter.className} bg-slate-100 text-gray-950 relative pt-28 sm:pt-36`}
       >
         {/* Left BG gradient */}
-        <div className="bg-[#ffd2d2] absolute -z-10 top-[-6rem] left-[-25rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem]"></div>
+        <div className="bg-[#daffdd] absolute -z-10 top-[-6rem] left-[-25rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem]"></div>
         {/* Right BG gradient */}
-        <div className="bg-[#d2d7ff] absolute -z-10 top-[-6rem] right-[-20rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem]"></div>
+        <div className="bg-[#d7dcff] absolute -z-10 top-[-6rem] right-[0rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem]"></div>
 
-        <Header />
-        {children}
+        <ActiveSectionContextProvider>
+          <Header />
+          {children}
+        </ActiveSectionContextProvider>
+        <Footer />
+
+        <Toaster position="top-right" />
       </body>
     </html>
   );
