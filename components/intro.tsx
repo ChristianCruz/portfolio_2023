@@ -50,7 +50,8 @@ export default function Intro() {
         transition={{ delay: 0.1 }}
       >
         <span className="font-bold">Hi, I'm Christian.</span>
-        <br className="sm:block hidden" />I am a junior React developer.
+        <br className="sm:block hidden" />A junior developer with a design
+        background.
         <br className="sm:block hidden" />I love building user interfaces and
         creating 3D visuals.{" "}
         <span className="text-lg">
