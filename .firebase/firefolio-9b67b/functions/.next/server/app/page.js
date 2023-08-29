@@ -450,37 +450,37 @@ module.exports = {
 
 /***/ }),
 
-/***/ 375:
+/***/ 7411:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3252));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 8807));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 345))
-
-/***/ }),
-
-/***/ 86:
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 212));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6013));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 8985));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6013));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 5478));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 292));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 8029));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3996))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 292));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3996));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 212))
 
 /***/ }),
 
-/***/ 5566:
+/***/ 4605:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 9571, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 2987, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 831, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6926, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 4282, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6505, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 9571, 23))
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6505, 23))
+
+/***/ }),
+
+/***/ 4598:
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 345));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3252));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 8807))
 
 /***/ }),
 
@@ -1013,7 +1013,7 @@ function Intro() {
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {
                         className: "sm:block hidden"
                     }),
-                    "I am a junior React developer.",
+                    "A junior developer with a design background.",
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {
                         className: "sm:block hidden"
                     }),
